@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <com.digger.arcmenulayout.widget.ArcMenuLayout
+            android:id="@+id/arcLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:arc_group_background="@color/colorPrimary"
+            app:arc_group_radius="130dp"
+            app:arc_group_axis_radius="100dp"
+            app:arc_group_direction="left"
+            app:arc_group_space_angle="30">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_item_background_shape"
+                android:textColor="#FF9500"
+                android:textSize="12dp"
+                android:text="A"/>
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_item_background_shape"
+                android:textColor="#1774E6"
+                android:textSize="12dp"
+                android:text="B"/>
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_item_background_shape"
+                android:textColor="#403B36"
+                android:textSize="12dp"
+                android:text="C"/>
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_item_background_shape"
+                android:textColor="#5FB336"
+                android:textSize="12dp"
+                android:text="D"/>
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_item_background_shape"
+                android:textColor="#49098A"
+                android:textSize="12dp"
+                android:text="E"/>
+
+        </com.digger.arcmenulayout.widget.ArcMenuLayout>
+
+        <Button
+            android:id="@+id/btnFab"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/btn_fab_background_shape"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

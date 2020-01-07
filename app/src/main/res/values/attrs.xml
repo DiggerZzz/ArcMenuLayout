@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ArcMenuLayout">
+        <attr name="arc_group_direction" format="enum">
+            <enum name="up" value="0"/>
+            <enum name="down" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+        <attr name="arc_group_radius" format="dimension"/>
+        <attr name="arc_group_axis_radius" format="dimension"/>
+        <attr name="arc_group_space_angle" format="float"/>
+        <attr name="arc_group_background" format="reference|color"/>
+    </declare-styleable>
+
+</resources>
